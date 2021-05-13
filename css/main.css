@@ -1,0 +1,334 @@
+/* section hero */
+.hero-section {
+  position: relative;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/main/hero-background.jpg);
+  padding: 200px 0 280px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  height: 600px;
+  max-width: 1600px;
+  background-size: cover;
+  background-position: center;
+
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.order-btn {
+  display: inline-block;
+  padding: 10px 32px;
+  margin: 30px 0 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--blue);
+
+  box-shadow: 0px 4px 4px var(--btn-boxshadow-color);
+  border-radius: 4px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* section out features */
+.our-features {
+  padding-top: 94px;
+}
+
+.our-features-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.thumb {
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-secondary);
+}
+
+.our-features-icon {
+  width: 65px;
+  height: 70px;
+}
+
+.our-features-item {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  max-width: 270px;
+}
+
+.our-features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  text-align: left;
+}
+
+.our-features-item:not(:first-child) {
+  margin-left: var(--item-set-gap);
+}
+
+.our-features-text {
+  color: var(--secondary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  max-width: 270px;
+  text-align: left;
+}
+
+/* sectio what do we do */
+
+.we-do {
+  padding: 94px 0px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.we-do-list {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.we-do-item {
+  position: relative;
+}
+
+.text-position {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 70px;
+  width: 100%;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.we-do-text {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+}
+
+.we-do-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+/* section our team */
+.our-team {
+  padding: 94px 0;
+  background-color: var(--background-secondary);
+}
+
+.our-team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+  margin-left: calc(-1 * var(--item-set-gap));
+}
+
+.our-team-item {
+  display: block;
+  align-content: center;
+  flex-basis: calc(100% / 4 - var(--item-set-gap));
+  margin-left: var(--item-set-gap);
+
+  background-color: var(--background-main);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.teammate-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 32px;
+}
+
+.our-team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--name-color);
+
+  margin-bottom: 10px;
+}
+
+.our-team-position {
+  margin-bottom: 16px;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--prof-color);
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: var(--transiton-duration-time);
+  transition-timing-function: var(--timing-function);
+}
+
+.social-item {
+  border-radius: 50%;
+
+  color: var(--main-logo);
+
+  transition-property: background-color;
+  transition-duration: var(--transiton-duration-time);
+  transition-timing-function: var(--timing-function);
+}
+
+.social-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.social-icon {
+  fill: currentColor;
+
+  transition-property: fill;
+  transition-duration: var(--transiton-duration-time);
+  transition-timing-function: var(--timing-function);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--blue);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--background-main);
+}
+
+.regular-customers {
+  padding: 94px 0;
+}
+
+.customer-list {
+  display: flex;
+
+  margin-top: 50px;
+}
+
+.customer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+
+  fill: var(--main-logo);
+
+  transition-property: color border-color fill;
+  transition-duration: var(--transiton-duration-time);
+  transition-timing-function: var(--timing-function);
+}
+
+.customer-link {
+  width: inherit;
+  height: inherit;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid;
+  border-color: var(--main-logo);
+  border-radius: 4px;
+
+  fill: var(--main-logo);
+
+  transition-property: border-color;
+  transition-duration: var(--transiton-duration-time);
+  transition-timing-function: var(--timing-function);
+}
+
+.customer-icon {
+  fill: var(--main-logo);
+  transition-property: fill;
+  transition-duration: var(--transiton-duration-time);
+  transition-timing-function: var(--timing-function);
+}
+
+.customer-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.customer-link:focus,
+.customer-link:hover {
+  border-color: var(--blue);
+}
+
+.customer-link:focus .customer-icon,
+.customer-link:hover .customer-icon {
+  fill: var(--blue);
+}
