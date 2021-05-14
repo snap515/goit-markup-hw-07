@@ -58,39 +58,31 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header-logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+.accent-logo,
+.nav-list__item--current {
+  color: var(--blue);
 }
 
-.web-logo,
-.nav-item-current {
-  color: var(--blue);
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navigation > a {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-
-.nav-list > a {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.nav-list-pages {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   margin-left: 93px;
 }
 
-.nav-list-pages a {
+.nav-list a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -100,25 +92,25 @@ body {
   transition-timing-function: var(--timing-function);
 }
 
-.nav-item {
+.nav-list__item {
   transition-property: color;
   transition-duration: var(--transiton-duration-time);
   transition-timing-function: var(--timing-function);
 }
 
-.nav-item:not(:first-child) {
+.nav-list__item:not(:first-child) {
   margin-left: 50px;
 }
 
-.nav-item-current:not(:first-child) {
+.nav-list__item--current:not(:first-child) {
   margin-left: 50px;
 }
 
-.nav-item-current {
+.nav-list__item--current {
   position: relative;
 }
 
-.nav-item-current::after {
+.nav-list__item--current::after {
   padding: 0;
   margin: 0;
   content: '';
@@ -132,8 +124,8 @@ body {
   border-radius: 2px;
 }
 
-.nav-item a:hover,
-.nav-list-pages a:focus,
+.nav-list__item a:hover,
+.nav-list a:focus,
 .contact-item a:hover,
 .contact-list a:focus {
   color: var(--blue);
@@ -194,14 +186,12 @@ body {
   align-items: baseline;
 }
 
-.footer-logo {
+.logotype {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  display: inline-block;
-  max-width: auto;
 }
 
 .footer-address {
