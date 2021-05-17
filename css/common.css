@@ -314,6 +314,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+
   text-align: justify;
   color: var(--main);
   background-color: var(--white);
@@ -322,7 +326,7 @@ body {
   border-radius: 4px;
 }
 
-.close-button {
+.modal__close-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -341,17 +345,11 @@ body {
   transition-timing-function: var(--timing-function);
 }
 
-.close-button:hover,
-.close-button:focus {
+.modal__close-button:hover,
+.modal__close-button:focus {
   border: 1px solid var(--blue);
   cursor: pointer;
   fill: var(--blue);
-}
-
-.modal-content {
-  width: 528px;
-  height: 581px;
-  padding: 40px;
 }
 
 .modal-content__title {
@@ -381,7 +379,7 @@ body {
   margin-top: 10px;
 }
 
-.form-label {
+.form-field__label {
   margin-bottom: 4px;
 
   color: var(--secondary);
@@ -391,7 +389,7 @@ body {
   letter-spacing: 0.01em;
 }
 
-.form-input {
+.form-field__input {
   height: 40px;
   width: 100%;
   padding: 14px 15px 14px 42px;
@@ -404,7 +402,7 @@ body {
   transition-timing-function: var(--timing-function);
 }
 
-.input-icon {
+.form-field__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -415,16 +413,16 @@ body {
   transition-timing-function: var(--timing-function);
 }
 
-.form-input:focus,
-.form-comment:focus {
+.form-field__input:focus,
+.form-field__comment:focus {
   outline-color: var(--blue);
 }
 
-.form-input:focus + .input-icon {
+.form-field__input:focus + .form-field__icon {
   fill: var(--blue);
 }
 
-.form-comment {
+.form-field__comment {
   padding: 12px 16px;
   height: 120px;
   resize: none;
@@ -436,7 +434,7 @@ body {
   transition-timing-function: var(--timing-function);
 }
 
-.checkbox-label {
+.form-field__checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,7 +457,7 @@ body {
 
 .custom-checkbox:focus {
   border: 2px solid var(--blue);
-  outline: 2px solid transparent;
+  outline: transparent;
 }
 
 .policy-text {
@@ -485,7 +483,7 @@ body {
   fill: var(--white);
 }
 
-.icon-custom-checkbox {
+.custom-checkbox__icon {
   fill: var(--white);
   position: absolute;
   top: 50%;
