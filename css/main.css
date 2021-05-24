@@ -1,26 +1,31 @@
 /* section hero */
-.hero-section {
+.hero {
   position: relative;
+
+  padding: 200px 0 280px 0;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../img/main/hero-background.jpg);
-  padding: 200px 0 280px 0;
-  margin-left: auto;
-  margin-right: auto;
   background-repeat: no-repeat;
+
   height: 600px;
   max-width: 1600px;
   background-size: cover;
   background-position: center;
-
   text-align: center;
   color: var(--white);
 }
 
-.hero-section__title {
+.hero__wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -29,10 +34,13 @@
   text-transform: uppercase;
 }
 
-.hero-section__order-btn {
-  display: inline-block;
+.hero__order-btn {
+  display: block;
+
   padding: 10px 32px;
-  margin: 30px 0 0;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 700;
   font-size: 16px;
@@ -52,13 +60,13 @@
   padding-top: 94px;
 }
 
-.our-features-list {
+.our-features__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.thumb {
+.our-features__thumb {
   height: 120px;
 
   display: flex;
@@ -67,19 +75,19 @@
   background-color: var(--background-secondary);
 }
 
-.our-features-icon {
+.our-features__icon {
   width: 65px;
   height: 70px;
 }
 
-.our-features-item {
+.our-features__item {
   display: flex;
   align-items: left;
   flex-direction: column;
   max-width: 270px;
 }
 
-.our-features-title {
+.our-features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -92,11 +100,11 @@
   text-align: left;
 }
 
-.our-features-item:not(:first-child) {
+.our-features__item:not(:first-child) {
   margin-left: var(--item-set-gap);
 }
 
-.our-features-text {
+.our-features__text {
   color: var(--secondary);
   font-size: 14px;
   font-weight: 400;
@@ -107,13 +115,13 @@
   text-align: left;
 }
 
-/* sectio what do we do */
+/* section what do we do */
 
 .we-do {
   padding: 94px 0px;
 }
 
-.section-title {
+.we-do__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -121,17 +129,17 @@
   letter-spacing: 0.03em;
 }
 
-.we-do-list {
+.we-do__list {
   display: flex;
   align-items: center;
   margin-top: 50px;
 }
 
-.we-do-item {
+.we-do__item {
   position: relative;
 }
 
-.text-position {
+.we-do__text-position {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -146,7 +154,7 @@
   background: rgba(47, 48, 58, 0.8);
 }
 
-.we-do-text {
+.we-do__text {
   color: var(--white);
   font-weight: 700;
   font-size: 14px;
@@ -155,17 +163,26 @@
   line-height: 16px;
 }
 
-.we-do-item:not(:first-child) {
+.we-do__item:not(:first-child) {
   margin-left: 30px;
 }
 
 /* section our team */
+
 .our-team {
   padding: 94px 0;
   background-color: var(--background-secondary);
 }
 
-.our-team-list {
+.our-team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -173,7 +190,7 @@
   margin-left: calc(-1 * var(--item-set-gap));
 }
 
-.our-team-item {
+.our-team__item {
   display: block;
   align-content: center;
   flex-basis: calc(100% / 4 - var(--item-set-gap));
@@ -185,7 +202,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.teammate-description {
+.our-team__description {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,7 +210,7 @@
   padding: 30px 32px;
 }
 
-.our-team-name {
+.our-team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -204,7 +221,7 @@
   margin-bottom: 10px;
 }
 
-.our-team-position {
+.our-team__position {
   margin-bottom: 16px;
 
   font-family: 'Roboto', sans-serif;
@@ -217,11 +234,11 @@
   color: var(--prof-color);
 }
 
-.social-list {
+.our-team__social-list {
   display: flex;
 }
 
-.social-link {
+.our-team__social-link {
   width: 44px;
   height: 44px;
 
@@ -236,7 +253,7 @@
   transition-timing-function: var(--timing-function);
 }
 
-.social-item {
+.our-team__social-item {
   border-radius: 50%;
 
   color: var(--main-logo);
@@ -246,11 +263,11 @@
   transition-timing-function: var(--timing-function);
 }
 
-.social-item:not(:first-child) {
+.our-team__social-item:not(:first-child) {
   margin-left: 10px;
 }
 
-.social-icon {
+.our-team__social-icon {
   fill: currentColor;
 
   transition-property: fill;
@@ -258,27 +275,37 @@
   transition-timing-function: var(--timing-function);
 }
 
-.social-link:hover,
-.social-link:focus {
+.our-team__social-link:hover,
+.our-team__social-link:focus {
   background-color: var(--blue);
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.our-team__social-link:hover .our-team__social-icon,
+.our-team__social-link:focus .our-team__social-icon {
   fill: var(--background-main);
 }
 
-.regular-customers {
+/* REGULAR CUSTOMERS */
+
+.customer {
   padding: 94px 0;
 }
 
-.customer-list {
+.customer__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.customer__list {
   display: flex;
 
   margin-top: 50px;
 }
 
-.customer-item {
+.customer__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,7 +320,7 @@
   transition-timing-function: var(--timing-function);
 }
 
-.customer-link {
+.customer__link {
   width: inherit;
   height: inherit;
 
@@ -312,23 +339,23 @@
   transition-timing-function: var(--timing-function);
 }
 
-.customer-icon {
+.customer__icon {
   fill: var(--main-logo);
   transition-property: fill;
   transition-duration: var(--transiton-duration-time);
   transition-timing-function: var(--timing-function);
 }
 
-.customer-item:not(:first-child) {
+.customer__item:not(:first-child) {
   margin-left: 30px;
 }
 
-.customer-link:focus,
-.customer-link:hover {
+.customer__link:focus,
+.customer__link:hover {
   border-color: var(--blue);
 }
 
-.customer-link:focus .customer-icon,
-.customer-link:hover .customer-icon {
+.customer__link:focus .customer__icon,
+.customer__link:hover .customer__icon {
   fill: var(--blue);
 }
